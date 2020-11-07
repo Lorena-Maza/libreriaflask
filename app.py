@@ -12,7 +12,8 @@ from models.autorlibro import AutorLibroModel
 app = Flask(__name__)
 # dialect+driver://username:password@host:port/database
 # es compatible con MySQL, Oracle, PostgreSQL, SQLite
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:root@localhost/libreria'
+#app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:root@localhost/libreria'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://u6vgy263x51cqqh1:bijysg2u3v9s9ayo@durvbryvdw2sjcm5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/ewt9g4onv90qac8k'
 api = Api(app=app)
 @app.before_first_request
 def iniciador():
